@@ -14,7 +14,7 @@ public class PathToTreeUtil {
      * @param arr 文件路径列表
      * @return TreeNode 树状结构
      */
-    public TreeNode toTree(List<String> arr) {
+    public static TreeNode toTree(List<String> arr) {
         // 自定义根目录
         TreeNode forest = new TreeNode("root", "root");
         TreeNode current = forest;
