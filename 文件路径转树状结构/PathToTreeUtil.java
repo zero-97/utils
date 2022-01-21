@@ -4,8 +4,16 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
+/**
+ * 文件路径转树状结构
+ */
 public class PathToTreeUtil {
 
+    /**
+     * 文件路径转树状结构
+     * @param arr 文件路径列表
+     * @return TreeNode 树状结构
+     */
     public TreeNode toTree(List<String> arr) {
         // 自定义根目录
         TreeNode forest = new TreeNode("root", "root");
