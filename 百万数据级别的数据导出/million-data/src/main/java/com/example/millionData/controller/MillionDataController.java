@@ -19,6 +19,10 @@ public class MillionDataController {
     @Autowired
     private IAsyncTaskLogService asyncTaskLogService;
 
+    /**
+     * 同步导出
+     * @param response
+     */
     @GetMapping("export")
     public void export(HttpServletResponse response){
         try {
@@ -27,6 +31,11 @@ public class MillionDataController {
         }
     }
 
+    /**
+     * 异步导出
+     * @return
+     * @throws FileNotFoundException
+     */
     @GetMapping("exportAsyn")
     public int exportAsyn() throws FileNotFoundException {
         int logId = asyncTaskLogService.insert();
@@ -34,6 +43,11 @@ public class MillionDataController {
         return logId;
     }
 
+    /**
+     * 获取下载路径
+     * @param id 日志表ID
+     * @return
+     */
     @GetMapping("getUrl")
     public String getUrl(@RequestParam int id) {
         return asyncTaskLogService.getUrl(id);

@@ -1,7 +1,8 @@
 package com.example.millionData.common;
 
-import lombok.Data;
-
+/**
+ * 日志状态枚举类
+ */
 public enum LogStatusEnum {
 
     WAITING(1, "上传中"),

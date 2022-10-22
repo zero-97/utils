@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * 异步导出日志
+ */
 @Data
 public class AsyncTaskLog {
 

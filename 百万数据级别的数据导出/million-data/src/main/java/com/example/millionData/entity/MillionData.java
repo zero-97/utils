@@ -4,7 +4,7 @@ import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.Data;
 
 /**
- * @author yuanqizhang
+ * 百万数据类
  */
 @Data
 public class MillionData {
